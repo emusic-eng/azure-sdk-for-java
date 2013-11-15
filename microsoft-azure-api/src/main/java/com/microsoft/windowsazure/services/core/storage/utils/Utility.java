@@ -34,8 +34,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.TimeZone;
+import com.sun.xml.internal.stream.XMLInputFactoryImpl;
 
-import javax.xml.stream.XMLInputFactory;
+//import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
@@ -308,22 +309,19 @@ public final class Utility {
      * 
      * @return A <code>java.xml.stream.XMLStreamReader</code> object that represents the XML stream reader created from
      *         the specified input stream.
-     * 
      * @throws XMLStreamException
      *             If the XML stream reader could not be created.
      */
     public static XMLStreamReader createXMLStreamReaderFromStream(final InputStream streamRef)
-            throws XMLStreamException {
-        // TODO optimization keep this static
-        XMLInputFactory xmlif = null;
+           throws XMLStreamException {
 
-        xmlif = XMLInputFactory.newInstance();
-        xmlif.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, Boolean.TRUE);
-        xmlif.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);
+    	XMLInputFactoryImpl xmlif = new XMLInputFactoryImpl();
+		
+        xmlif.setProperty(XMLInputFactoryImpl.IS_REPLACING_ENTITY_REFERENCES, Boolean.TRUE);
+        xmlif.setProperty(XMLInputFactoryImpl.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);
         // set the IS_COALESCING property to true , if application desires to
         // get whole text data as one event.
-        xmlif.setProperty(XMLInputFactory.IS_COALESCING, Boolean.TRUE);
-
+        xmlif.setProperty(XMLInputFactoryImpl.IS_COALESCING, Boolean.TRUE);
         return xmlif.createXMLStreamReader(streamRef);
     }
 
@@ -341,14 +339,13 @@ public final class Utility {
      */
     public static XMLStreamReader createXMLStreamReaderFromReader(final Reader reader) throws XMLStreamException {
         // TODO optimization keep this static
-        XMLInputFactory xmlif = null;
 
-        xmlif = XMLInputFactory.newInstance();
-        xmlif.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, Boolean.TRUE);
-        xmlif.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);
+    	XMLInputFactoryImpl xmlif = new XMLInputFactoryImpl();
+        xmlif.setProperty(XMLInputFactoryImpl.IS_REPLACING_ENTITY_REFERENCES, Boolean.TRUE);
+        xmlif.setProperty(XMLInputFactoryImpl.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);
         // set the IS_COALESCING property to true , if application desires to
         // get whole text data as one event.
-        xmlif.setProperty(XMLInputFactory.IS_COALESCING, Boolean.TRUE);
+        xmlif.setProperty(XMLInputFactoryImpl.IS_COALESCING, Boolean.TRUE);
 
         return xmlif.createXMLStreamReader(reader);
     }

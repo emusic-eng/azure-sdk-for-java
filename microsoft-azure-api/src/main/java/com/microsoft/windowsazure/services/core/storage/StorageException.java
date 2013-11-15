@@ -16,6 +16,7 @@ package com.microsoft.windowsazure.services.core.storage;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.io.InputStream;
 import java.net.SocketException;
 
 import javax.xml.stream.XMLStreamException;
@@ -48,12 +49,20 @@ public class StorageException extends Exception {
      */
     protected static StorageExtendedErrorInformation getErrorDetailsFromRequest(final HttpURLConnection request,
             final OperationContext opContext) {
-        if (request == null) {
+
+    	if (request == null) {
             return null;
         }
         try {
-            final StorageErrorResponse response = new StorageErrorResponse(request.getErrorStream());
-            return response.getExtendedErrorInformation();
+        
+            // First check the existence of an error stream
+            InputStream err = request.getErrorStream();
+            if (err != null) {
+                final StorageErrorResponse response = new StorageErrorResponse(request.getErrorStream());
+                return response.getExtendedErrorInformation();
+            }
+            else
+                return null;        	
         }
         catch (final XMLStreamException e) {
             return null;
