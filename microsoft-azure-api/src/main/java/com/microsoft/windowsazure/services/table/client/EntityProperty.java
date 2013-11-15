@@ -180,7 +180,7 @@ public final class EntityProperty {
      * @param type
      *            The {@link EdmType} to set as the entity property type.
      */
-    protected EntityProperty(EdmType type) {
+    public EntityProperty(EdmType type) {
         this.value = null;
         this.edmType = type;
         this.isNull = true;
