@@ -70,6 +70,7 @@ import com.microsoft.windowsazure.services.media.models.MediaProcessorInfo;
 import com.microsoft.windowsazure.services.media.models.ProtectionKey;
 import com.microsoft.windowsazure.services.media.models.Task;
 
+@SuppressWarnings("deprecation")
 class MediaServiceWrapper {
     private final MediaContract service;
 

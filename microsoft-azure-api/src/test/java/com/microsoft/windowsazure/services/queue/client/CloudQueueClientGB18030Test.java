@@ -23,6 +23,7 @@ import org.junit.Test;
 
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 
+@SuppressWarnings("deprecation")
 public class CloudQueueClientGB18030Test extends QueueTestBase {
 
     // GB18030CharSet is "啊齄丂狛狜隣郎隣兀﨩ˊ▇█〞〡￤℡㈱‐ー﹡﹢﹫、〓ⅰⅹ⒈€㈠㈩ⅠⅫ！￣ぁんァヶΑ︴АЯаяāɡㄅㄩ─╋︵﹄︻︱︳︴ⅰⅹɑɡ〇〾⿻⺁䜣€㐀㒣㕴㕵㙉㙊䵯䵰䶴䶵".

@@ -41,6 +41,7 @@ import com.microsoft.windowsazure.services.table.client.TableQuery.QueryComparis
 /**
  * Table Query Tests
  */
+@SuppressWarnings("deprecation")
 public class TableQueryTests extends TableTestBase {
     @BeforeClass
     public static void setup() throws URISyntaxException, StorageException, InvalidKeyException {

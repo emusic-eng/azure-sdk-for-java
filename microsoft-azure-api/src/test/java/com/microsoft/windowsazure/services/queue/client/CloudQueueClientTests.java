@@ -28,6 +28,7 @@ import com.microsoft.windowsazure.services.core.storage.ResultSegment;
 import com.microsoft.windowsazure.services.core.storage.StorageCredentials;
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 
+@SuppressWarnings("deprecation")
 public final class CloudQueueClientTests extends QueueTestBase {
 
     @Test

@@ -79,6 +79,7 @@ import com.microsoft.windowsazure.services.core.RetryPolicyFilter;
 import com.microsoft.windowsazure.services.core.ServiceException;
 import com.microsoft.windowsazure.services.core.ServiceFilter;
 
+@SuppressWarnings("deprecation")
 public class BlobServiceIntegrationTest extends IntegrationTestBase {
     private static final String testContainersPrefix = "sdktest-";
     private static final String createableContainersPrefix = "csdktest-";

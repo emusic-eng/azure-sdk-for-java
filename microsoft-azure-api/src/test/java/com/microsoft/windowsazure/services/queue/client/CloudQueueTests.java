@@ -43,6 +43,7 @@ import com.microsoft.windowsazure.services.core.storage.StorageException;
 /**
  * Table Client Tests
  */
+@SuppressWarnings("deprecation")
 public class CloudQueueTests extends QueueTestBase {
     @Test
     public void queueGetSetPermissionTest() throws StorageException, URISyntaxException {

@@ -29,6 +29,7 @@ import org.junit.Test;
 
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 
+@SuppressWarnings("deprecation")
 public class TableBatchOperationTests extends TableTestBase {
     @Test
     public void batchDelete() throws StorageException {

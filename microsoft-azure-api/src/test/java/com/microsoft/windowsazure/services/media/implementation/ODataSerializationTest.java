@@ -34,6 +34,7 @@ import com.microsoft.windowsazure.services.media.implementation.content.AssetTyp
 import com.microsoft.windowsazure.services.media.implementation.content.Constants;
 import com.microsoft.windowsazure.services.media.models.AssetInfo;
 
+@SuppressWarnings("deprecation")
 public class ODataSerializationTest {
 
     private final String sampleFeedOneAsset = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"

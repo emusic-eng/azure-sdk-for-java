@@ -27,6 +27,7 @@ import com.microsoft.windowsazure.services.core.storage.StorageException;
 /**
  * Table Serializer Tests
  */
+@SuppressWarnings("deprecation")
 public class TableSerializerTests extends TableTestBase {
     @Test
     public void testComplexEntityInsert() throws IOException, URISyntaxException, StorageException {

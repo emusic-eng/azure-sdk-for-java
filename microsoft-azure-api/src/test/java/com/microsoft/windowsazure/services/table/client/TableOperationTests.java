@@ -31,6 +31,7 @@ import com.microsoft.windowsazure.services.core.storage.StorageException;
 /**
  * Table Operation Tests
  */
+@SuppressWarnings("deprecation")
 public class TableOperationTests extends TableTestBase {
     @Test
     public void delete() throws StorageException {

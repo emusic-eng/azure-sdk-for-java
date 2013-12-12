@@ -29,7 +29,7 @@ import com.microsoft.windowsazure.services.queue.QueueConfiguration;
 import com.microsoft.windowsazure.services.serviceBus.ServiceBusConfiguration;
 import com.microsoft.windowsazure.services.table.TableConfiguration;
 
-@SuppressWarnings("deprecation")
+
 public abstract class ScenarioTestBase {
     protected static Configuration config;
 

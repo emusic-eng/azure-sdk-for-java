@@ -25,6 +25,7 @@ import com.microsoft.windowsazure.services.core.storage.StorageException;
 /**
  * Table Escaping Tests
  */
+@SuppressWarnings("deprecation")
 public class TableEscapingTests extends TableTestBase {
     @Test
     public void emptyString() throws StorageException {

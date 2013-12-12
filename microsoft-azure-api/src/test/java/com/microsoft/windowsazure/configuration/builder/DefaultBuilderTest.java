@@ -26,6 +26,7 @@ import org.junit.rules.ExpectedException;
 
 import com.microsoft.windowsazure.services.core.DefaultBuilder;
 
+@SuppressWarnings("deprecation")
 public class DefaultBuilderTest {
 
     Map<String, Object> properties;

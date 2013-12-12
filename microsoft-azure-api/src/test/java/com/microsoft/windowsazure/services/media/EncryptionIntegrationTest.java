@@ -69,6 +69,7 @@ import com.microsoft.windowsazure.services.media.models.Task;
 import com.microsoft.windowsazure.services.media.models.TaskInfo;
 import com.microsoft.windowsazure.services.media.models.TaskState;
 
+@SuppressWarnings("deprecation")
 public class EncryptionIntegrationTest extends IntegrationTestBase {
     private final String storageDecryptionProcessor = "Storage Decryption";
 

@@ -46,6 +46,7 @@ import com.microsoft.windowsazure.services.core.storage.StorageException;
 /**
  * Table Client Tests
  */
+@SuppressWarnings("deprecation")
 public class TableClientTests extends TableTestBase {
     @Test
     public void listTablesSegmented() throws IOException, URISyntaxException, StorageException {

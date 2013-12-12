@@ -34,6 +34,7 @@ import com.microsoft.windowsazure.services.queue.client.CloudQueueClient;
 /**
  * Table Test Base
  */
+@SuppressWarnings("deprecation")
 public class TableTestBase {
     public static boolean USE_DEV_FABRIC = false;
     public static final String CLOUD_ACCOUNT_HTTP = "DefaultEndpointsProtocol=http;AccountName=[ACCOUNT NAME];AccountKey=[ACCOUNT KEY]";
