@@ -131,6 +131,8 @@ public final class ExecutionEngine {
                             catch (StorageException e) {
                             }
                             finally {
+				//according to this article, this action does not close the connection
+				//http://docs.oracle.com/javase/7/docs/technotes/guides/net/http-keepalive.html
                                 inStream.close();
                             }
                         }

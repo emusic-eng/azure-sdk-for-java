@@ -487,9 +487,11 @@ class AtomPubParser {
             if (currProp.getIsNull()) {
                 xmlw.writeAttribute("m", ODataConstants.DATA_SERVICES_METADATA_NS, ODataConstants.NULL, Constants.TRUE);
             }
-
+	   // else
+	    //{
             // Write Value
             xmlw.writeCharacters(currProp.getValueAsString());
+	    //}
             // End d:PropName
             xmlw.writeEndElement();
         }
