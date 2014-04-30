@@ -18,17 +18,17 @@
 		<link>
 			<name>annotations</name>
 			<type>2</type>
-			<location>microsoft-azure-api/target/generated-sources/annotations</location>
+			<location>${PROJECT_LOC}/microsoft-azure-api/target/generated-sources/annotations</location>
 		</link>
 		<link>
 			<name>generated-sources</name>
 			<type>2</type>
-			<location>microsoft-azure-api/target/generated-sources</location>
+			<location>${PROJECT_LOC}/microsoft-azure-api/target/generated-sources</location>
 		</link>
 		<link>
 			<name>xjc</name>
 			<type>2</type>
-			<location>microsoft-azure-api/target/generated-sources/xjc</location>
+			<location>${PROJECT_LOC}/microsoft-azure-api/target/generated-sources/xjc</location>
 		</link>
 	</linkedResources>
 </projectDescription>
