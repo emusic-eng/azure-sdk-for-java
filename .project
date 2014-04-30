@@ -18,17 +18,17 @@
 		<link>
 			<name>annotations</name>
 			<type>2</type>
-			<location>C:/Code/SourceControl/emusic-eng/azure-sdk-for-java/microsoft-azure-api/target/generated-sources/annotations</location>
+			<location>microsoft-azure-api/target/generated-sources/annotations</location>
 		</link>
 		<link>
 			<name>generated-sources</name>
 			<type>2</type>
-			<location>C:/Code/SourceControl/emusic-eng/azure-sdk-for-java/microsoft-azure-api/target/generated-sources</location>
+			<location>microsoft-azure-api/target/generated-sources</location>
 		</link>
 		<link>
 			<name>xjc</name>
 			<type>2</type>
-			<location>C:/Code/SourceControl/emusic-eng/azure-sdk-for-java/microsoft-azure-api/target/generated-sources/xjc</location>
+			<location>microsoft-azure-api/target/generated-sources/xjc</location>
 		</link>
 	</linkedResources>
 </projectDescription>
